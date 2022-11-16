@@ -1,0 +1,15 @@
+startup_message off
+
+termcapinfo rxvt-unicode ti@:te@     #enable SHIFT-PGUP / SHIFT-PGDOWN scroll
+terminfo rxvt-unicode ti@:te@:
+setenv LC_CTYPE en_US.UTF-8
+term rxvt-unicode-256color
+
+hardstatus alwaysfirstline
+hardstatus string "%{= kw}%{= Gk}[ $LOGNAME@%H ] %{= -}%{= Kw} %-w%{= wk}%n %t%{-}%+w %-= %= %{= kw} %l %{= wk} %101`%D %M %d, %0c:%s"
+
+caption splitonly "%{= Kw} %n %t"
+
+shelltitle "$ |bash"
+
+altscreen on
